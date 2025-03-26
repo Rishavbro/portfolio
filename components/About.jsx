@@ -41,15 +41,15 @@ const About = ({isDarkMode}) => {
                 <Image src={assets.my_profile_2_image} alt='user' className='w-full rounded-3xl' />
             </motion.div>
 
-            <motion.div className='flex-1'
+            <motion.div className=' flex-1 w-full text-center sm:text-left '
                         initial={{opacity:0,}}
                         whileInView={{opacity:1}}
                         transition={{duration:0.6,delay:0.8}}
             >
-                <p className='mb-10 max-w-2xl font-Ovo'>
+                <p className='mb-10 font-Ovo text-justify mx-auto max-w-2xl sm:mx-0'>
                     I am a full-stack web developer with MERN as my go to stack.I have built my own projects with the technologies i have learnt so far.I am always ready for the opportunities to collaabrate and contribute with you.
                 </p>
-                <motion.ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'
+                <motion.ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto sm:mx-0'
                         initial={{opacity:0,}}
                         whileInView={{opacity:1}}
                         transition={{duration:0.8,delay:1}}
@@ -59,7 +59,7 @@ const About = ({isDarkMode}) => {
                             whileInView={{scale:1.05}}
                         key={i} className='border-[0.5px]  border-gray-400 rounded-xl cursor-pointer p-3 hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] dark:border-white dark:hover:shadow-white dark:hover:bg-[#2a004a]/50
 '>
-                            <Image src={isDarkMode ? info.iconDark : info.icon} alt={info.title} className='w-7 mt-3 ' />
+                            <Image src={isDarkMode ? info.iconDark : info.icon} alt={info.title} className='w-7 mt-3 mx-auto sm:mx-0' />
                             <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{info.title}</h3>
                             <p className='text-gray-600 text-sm dark:text-white/80'>{info.description}</p>
                         </motion.li>
@@ -71,7 +71,7 @@ const About = ({isDarkMode}) => {
                         transition={{duration:0.5,delay:1.3}}
                 >Tools I use</motion.h4>
 
-                <motion.ul className='flex items-center gap-3 sm:gap-5'
+                <motion.ul className='flex flex-wrap justify-center items-center gap-3 sm:justify-start  sm:gap-5'
                         initial={{opacity:0,}}
                         whileInView={{opacity:1}}
                         transition={{duration:0.5,delay:1.5}}
@@ -80,7 +80,7 @@ const About = ({isDarkMode}) => {
                         <motion.li key={i} className='flex items-center justify-center w-12 p-4 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'
                             whileHover={{scale:1.05}}
                         >
-                            <Image src={tool} alt='Tool' className='w-8 sm:w-7' />
+                            <Image src={tool} alt='Tool' className='w-10 sm:w-12 h-auto' />
                         </motion.li>
                     ))}
                 </motion.ul>
