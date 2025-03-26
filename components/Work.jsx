@@ -61,13 +61,25 @@ const Work = ({isDarkMode}) => {
             ))}
         </motion.div>
 
-        <motion.a target='_blank' href="https://github.com/Rishavbro" className='w-max p-3.5 flex items-center justify-center gap-2  text-gray-700 border-[0.5px] border-gray-700 rounded-full mx-auto my-20 hover:bg-[#fcf4ff] dark:text-white dark:border-white dark:hover:bg-[#2a004a]'
-          initial={{opacity:0}}
-          whileInView={{opacity:1}}
-          transition={{duration:0.5,delay:1.1}}
-        >
-        check out my github profile for more projects <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} className='w-4' alt='arrow' /> <Image src={assets.github_icon} alt='gihub' className='w-8' />
-        </motion.a>
+        <div className="w-full flex sm:justify-center">
+    <motion.a 
+        target='_blank' 
+        href="https://github.com/Rishavbro" 
+        className='w-max px-5 py-3 flex items-center justify-center gap-3 text-lg font-medium text-gray-700 border border-gray-700 rounded-full shadow-md transition-all duration-300 hover:scale-105 hover:bg-gray-100 dark:text-white dark:border-white dark:hover:bg-[#2a004a]'
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1.1 }}
+    >
+        <span>Check out my GitHub</span> 
+        <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} className='w-5' alt='arrow' /> 
+        <Image src={assets.github_icon} alt='github' className='w-6 rounded-full' />
+    </motion.a>
+</div>
+
+
+      
+     
+
         
     </motion.div>
   )
