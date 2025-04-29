@@ -109,16 +109,16 @@ export const workData = [
         to:'https://blog-website-six-sandy.vercel.app/signup'
     },
     {
-        title: 'Real time chat app',
+        title: 'Real time chat website',
         description: 'Full stack web',
         bgImage: '/work-2.png',
         to:'https://frontend-of-chat-website.vercel.app/'
     },
     {
-        title: 'Weather site',
+        title: 'e-commerce website',
         description: 'Web Design',
         bgImage: '/work-3.png',
-        to:'/he'
+        to:'https://shopit-e-commerce-eusg.onrender.com/'
     },
     {
         title: 'Hotel Bokking website',
